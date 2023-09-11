@@ -5,3 +5,8 @@ After cloning project into your local repository, go to root folder of the proje
 - ```docker build -t search-engine-test .```
 - ```docker run -dp 127.0.0.1:8082:8082 -e browser=Chrome -e server=container -e keyword="Domain specific languages" search-engine-test```
 - Go to container terminal and follow-up the logs produced for test run
+
+## Apply below the steps for launching test project run on local machine
+
+- Go to root directory of Java project
+- ```mvn test -Dbrowser=Chrome -Dkeyword="Domain specific languages" -Dserver=local```
